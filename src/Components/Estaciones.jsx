@@ -40,25 +40,32 @@ const MetroFinder = () => {
   }
 
   const encontrarRuta = () => {
-    const rutaOptima = encontrarCaminoMasCorto(estacion1, estacion2);
-    if (rutaOptima.length === 0) {
-      setCosto("No hay conexión directa entre las estaciones.");
+    if (!estacion1 || !estacion2) {
+      setCosto("Por favor, selecciona estaciones de origen y destino.");
       setRuta([]);
       setPuntosMedios([]);
     } else {
-      setCosto(rutaOptima.length - 1);
-      setRuta(rutaOptima);
-      const puntoMedioIndex = Math.floor(rutaOptima.length / 2);
-      const puntosMedios =
-        rutaOptima.length % 2 === 0
-          ? [rutaOptima[puntoMedioIndex - 1], rutaOptima[puntoMedioIndex]]
-          : [rutaOptima[puntoMedioIndex]];
-      setPuntosMedios(puntosMedios);
+      const rutaOptima = encontrarCaminoMasCorto(estacion1, estacion2);
+      if (rutaOptima.length === 0) {
+        setCosto("No hay conexión directa entre las estaciones.");
+        setRuta([]);
+        setPuntosMedios([]);
+      } else {
+        setCosto(rutaOptima.length - 1);
+        setRuta(rutaOptima);
+        const puntoMedioIndex = Math.floor(rutaOptima.length / 2);
+        const puntosMedios =
+          rutaOptima.length % 2 === 0
+            ? [rutaOptima[puntoMedioIndex - 1], rutaOptima[puntoMedioIndex]]
+            : [rutaOptima[puntoMedioIndex]];
+        setPuntosMedios(puntosMedios);
+      }
     }
   };
+  
 
   return (
-    <div>
+    <div className="container">
       <select value={estacion1} onChange={(e) => setEstacion1(e.target.value)}>
         <option value="" disabled>
           Selecciona una estación de origen
@@ -91,15 +98,15 @@ const MetroFinder = () => {
       </select>
 
       <button onClick={encontrarRuta}>Encontrar camino</button>
-      <p>Costo: {costo}</p>
-      <ul>
-        {ruta.map((estacion, index) => (
-          <li key={index}>{estacion}</li>
-        ))}
-      </ul>
-      {puntosMedios.length > 0 && (
-        <p>Puntos medios: {puntosMedios.join(", ")}</p>
-      )}
+      <div className="resultados-container">
+        <p>Costo: {costo}</p>
+        <ul>
+          {ruta.map((estacion, index) => (
+            <li key={index}>{estacion}</li>
+          ))}
+        </ul>
+        {puntosMedios.length > 0 && <p>Puntos medios: {puntosMedios.join(", ")}</p>}
+      </div>
     </div>
   );
 };

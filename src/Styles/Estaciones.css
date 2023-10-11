@@ -1,33 +1,52 @@
-/* Estaciones.css */
-.rojo {
-    color: #e71736; /* Rojo para línea 1 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
   }
-  
-  .amarillo {
-    color: #e57104; /* Amarillo para línea 2 */
-  }
-  
-  .fucsia {
-    color: #692f23; /* Fucsia para línea 3 */
-  }
-  
-  .azul {
-    color: #2d3092; /* Azul para línea 4 */
-  }
-  
-  .celeste {
-    color: #01aef0; /* Celeste para línea 4A */
-  }
-  
-  .verde {
-    color: #0a9444; /* Verde para línea 5 */
-  }
-  
-  .morado {
-    color: #a35db4; /* Morado para línea 6 */
-  }
+
+select {
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
   
   .linea-option {
-    font-weight: bold;
+    font-style: italic;
+  }
+  
+  button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   

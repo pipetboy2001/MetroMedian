@@ -1,0 +1,6 @@
+.titulo-navbar {
+    font-weight: bold;
+    font-size: 24px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+    color: #d50000; /* Cambia el color del texto a tu preferencia */
+    text-transform: uppercase; /* Puedes aplicar transformación de texto si deseas */
+  }
