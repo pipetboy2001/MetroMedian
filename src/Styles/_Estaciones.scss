@@ -50,3 +50,27 @@ select {
     margin-bottom: 5px;
   }
   
+
+.resultados-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .resultados-container p {
+    margin-right: 20px;
+  }
+  
+  .resultados-container ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .resultados-container li {
+    margin-right: 10px;
+  }
+  

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./../Styles/Estaciones.css";
 import { lineas_metro } from "../Data/Estaciones.json";
 
 const estacionesMetro = lineas_metro.flat();

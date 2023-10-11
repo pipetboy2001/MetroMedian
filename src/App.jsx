@@ -1,13 +1,23 @@
 import React from "react";
 import Estaciones from "./Components/Estaciones";
 import NavBar from "./Components/Navbar";
-import "./Styles/Inicio.css"; // Importa el archivo CSS
+import "./Styles/styles.scss";
+import Map from "./assets/mapa-metro-santiago.jpg";
 
 const App = () => {
   return (
-    <div>
-      <NavBar/>
-      <Estaciones/>
+    <div className="app-container">
+      <div className="map-container">
+        <img className="map-image" src={Map} alt="Mapa de Metro Santiago" />
+      </div>
+      <div className="column-container">
+        <div className="navbar">
+          <NavBar />
+        </div>
+        <div className="estaciones-container">
+          <Estaciones />
+        </div>
+      </div>
     </div>
   );
 };

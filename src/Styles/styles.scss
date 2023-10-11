@@ -1,0 +1,32 @@
+
+@import 'Estaciones';
+@import 'Navbar';
+
+.app-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .map-container {
+    flex: 0.50;
+    /* Estilos adicionales para el contenedor del mapa si es necesario */
+  }
+  
+  .column-container {
+    flex: 0.57;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    /* Estilos para la barra de navegación */
+  }
+  
+  .estaciones-container {
+    /* Estilos para el contenedor de estaciones */
+  }
+  
+  .map-image {
+    width: 100%; /* Para asegurar que la imagen del mapa se ajuste correctamente */
+  }
+  

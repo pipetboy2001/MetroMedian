@@ -1,23 +1,24 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-//import "./../Styles/Navbar.css"
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Logo from "../assets/Logo.svg";
 
 function NavBar() {
   return (
     <>
-      <Navbar className="bg-body-tertiary">
+      <Navbar className="bg-body-tertiary justify-content-between">
         <Container>
-          <Navbar.Brand>
+          <Navbar.Brand className="d-flex align-items-center">
+            <span className="titulo-navbar mr-2">METRO </span>
             <img
               alt=""
-              src="./../../public/vite.svg"
-              width="30"
-              height="30"
+              src={Logo}
+              width="50"
+              height="40"
               className="d-inline-block align-top"
-            />{' '}
-             <span className="titulo-navbar">Metro Median</span>
+            />
+            <span className="titulo-navbar ml-2"> MEDIAN</span>
           </Navbar.Brand>
-          
         </Container>
       </Navbar>
     </>
