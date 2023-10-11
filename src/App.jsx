@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Estaciones from "./Components/Estaciones";
-import data from "./Data/Estaciones.json";
+import NavBar from "./Components/Navbar";
+import "./Styles/Inicio.css"; // Importa el archivo CSS
 
 const App = () => {
-
   return (
-    <div className="App">
-      <h1>Encuentra el Punto Medio entre Estaciones del Metro</h1>
+    <div>
+      <NavBar/>
       <Estaciones/>
     </div>
   );
