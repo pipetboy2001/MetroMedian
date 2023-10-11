@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import "./../Styles/Navbar.css"
+//import "./../Styles/Navbar.css"
 
 function NavBar() {
   return (
