@@ -1,0 +1,173 @@
+{
+    "lineas": {
+      "linea1": {
+        "estaciones": [
+          {"nombre": "San pablo", "tiempo": 1, "orden": 1},
+          {"nombre": "Neptuno", "tiempo": 1, "orden": 2},
+          {"nombre": "Pajaritos", "tiempo": 1, "orden": 3},
+          {"nombre": "Las rejas", "tiempo": 1, "orden": 4},
+          {"nombre": "Ecuador", "tiempo": 1, "orden": 5},
+          {"nombre": "San alberto hurtado", "tiempo": 1, "orden": 6},
+          {"nombre": "Universidad de santiago", "tiempo": 1, "orden": 7},
+          {"nombre": "Estacion central", "tiempo": 1, "orden": 8},
+          {"nombre": "ULA", "tiempo": 1, "orden": 9},
+          {"nombre": "Republica", "tiempo": 1, "orden": 10},
+          {"nombre": "Los heroes", "tiempo": 1, "orden": 11},
+          {"nombre": "La moneda", "tiempo": 1, "orden": 12},
+          {"nombre": "Universidad de chile", "tiempo": 1, "orden": 13},
+          {"nombre": "Santa lucia", "tiempo": 1, "orden": 14},
+          {"nombre": "Universidad Catolica", "tiempo": 1, "orden": 15},
+          {"nombre": "Baquedano", "tiempo": 1, "orden": 16},
+          {"nombre": "Salvador", "tiempo": 1, "orden": 17},
+          {"nombre": "Manuel montt", "tiempo": 1, "orden": 18},
+          {"nombre": "Pedro de valdivia", "tiempo": 1, "orden": 19},
+          {"nombre": "Los leones", "tiempo": 1, "orden": 20},
+          {"nombre": "Tobalaba", "tiempo": 1, "orden": 21},
+          {"nombre": "El golf", "tiempo": 1, "orden": 22},
+          {"nombre": "Alcantara", "tiempo": 1, "orden": 23},
+          {"nombre": "Escuela militar", "tiempo": 1, "orden": 24},
+          {"nombre": "Manquehue", "tiempo": 1, "orden": 25},
+          {"nombre": "Los dominicos", "tiempo": 1, "orden": 26}  
+        ]
+      },
+      "linea2": {
+        "estaciones": [
+          {"nombre": "Vespucio Norte", "tiempo": 1, "orden": 1},
+          {"nombre": "Zapadores", "tiempo": 1, "orden": 2},
+          {"nombre": "Dorsal", "tiempo": 1, "orden": 3},
+          {"nombre": "Einstein", "tiempo": 1, "orden": 4},
+          {"nombre": "Cementerios", "tiempo": 1, "orden": 5},
+          {"nombre": "Cerro blanco", "tiempo": 1, "orden": 6},
+          {"nombre": "Patronato", "tiempo": 1, "orden": 7},
+          {"nombre": "Puente cal y canto", "tiempo": 1, "orden": 8},
+          {"nombre": "Santa ana", "tiempo": 1, "orden": 9},
+          {"nombre": "Los heroes", "tiempo": 1, "orden": 10},
+          {"nombre": "Toesca", "tiempo": 1, "orden": 11},
+          {"nombre": "Parque ohiggins", "tiempo": 1, "orden": 12},
+          {"nombre": "Rondizzoni", "tiempo": 1, "orden": 13},
+          {"nombre": "Franklin", "tiempo": 1, "orden": 14},
+          {"nombre": "El llano", "tiempo": 1, "orden": 15},
+          {"nombre": "San miguel", "tiempo": 1, "orden": 16},
+          {"nombre": "Lo vial", "tiempo": 1, "orden": 17},
+          {"nombre": "Departamental", "tiempo": 1, "orden": 18},
+          {"nombre": "Ciudad del nino", "tiempo": 1, "orden": 19},
+          {"nombre": "Lo ovalle", "tiempo": 1, "orden": 20},
+          {"nombre": "El parron", "tiempo": 1, "orden": 21},
+          {"nombre": "La cisterna", "tiempo": 1, "orden": 22}  
+        ]
+      },
+      "linea3": {
+        "estaciones": [
+          {"nombre": "Plaza quilicura", "tiempo": 1, "orden": 1},
+          {"nombre": "Lo cruzat", "tiempo": 1, "orden": 2},
+          {"nombre": "Ferrocarril", "tiempo": 1, "orden": 3},
+          {"nombre": "Los libertadores", "tiempo": 1, "orden": 4},
+          {"nombre": "Cardenal caro", "tiempo": 1, "orden": 5},
+          {"nombre": "Vicaceta", "tiempo": 1, "orden": 6},
+          {"nombre": "Conchalí", "tiempo": 1, "orden": 7},
+          {"nombre": "Plaza chacabuco", "tiempo": 1, "orden": 8},
+          {"nombre": "Hospitales", "tiempo": 1, "orden": 9},
+          {"nombre": "Puente cal y canto", "tiempo": 1, "orden": 10},
+          {"nombre": "Plaza de armas", "tiempo": 1, "orden": 11},
+          {"nombre": "Universidad de chile", "tiempo": 1, "orden": 12},
+          {"nombre": "Parque almagro", "tiempo": 1, "orden": 13},
+          {"nombre": "Matta", "tiempo": 1, "orden": 14},
+          {"nombre": "Irarrázaval", "tiempo": 1, "orden": 15},
+          {"nombre": "Monseñor Eyzaguirre", "tiempo": 1, "orden": 16},
+          {"nombre": "Ñuñoa", "tiempo": 1, "orden": 17},
+          {"nombre": "Chile españa", "tiempo": 1, "orden": 18},
+          {"nombre": "Villa freire", "tiempo": 1, "orden": 19},
+          {"nombre": "Plaza egaña", "tiempo": 1, "orden": 20},
+          {"nombre": "Fernando castillo velasco", "tiempo": 1, "orden": 21}      
+        ]
+      },
+      "linea4": {
+        "estaciones": [
+          {"nombre": "Tobalaba", "tiempo": 1, "orden": 1},
+          {"nombre": "Cristobal colon", "tiempo": 1, "orden": 2},
+          {"nombre": "Francisco bilbao", "tiempo": 1, "orden": 3},
+          {"nombre": "Principe de gales", "tiempo": 1, "orden": 4},
+          {"nombre": "Simón bolivar", "tiempo": 1, "orden": 5},
+          {"nombre": "Plaza egana", "tiempo": 1, "orden": 6},
+          {"nombre": "Los orientales", "tiempo": 1, "orden": 7},
+          {"nombre": "Grecia", "tiempo": 1, "orden": 8},
+          {"nombre": "Los presidentes", "tiempo": 1, "orden": 9},
+          {"nombre": "Quilin", "tiempo": 1, "orden": 10},
+          {"nombre": "Las torres", "tiempo": 1, "orden": 11},
+          {"nombre": "Macul", "tiempo": 1, "orden": 12},
+          {"nombre": "Vicuña mackenna", "tiempo": 1, "orden": 13},
+          {"nombre": "Vicente valdes", "tiempo": 1, "orden": 14},
+          {"nombre": "Rojas magallanes", "tiempo": 1, "orden": 15},
+          {"nombre": "Trinidad", "tiempo": 1, "orden": 16},
+          {"nombre": "San jose de la estrella", "tiempo": 1, "orden": 17},
+          {"nombre": "Los quillayes", "tiempo": 1, "orden": 18},
+          {"nombre": "Elisa correa", "tiempo": 1, "orden": 19},
+          {"nombre": "Hospital sotero del rio", "tiempo": 1, "orden": 20},
+          {"nombre": "Las mercedes", "tiempo": 1, "orden": 21},
+          {"nombre": "Plaza puente alto", "tiempo": 1, "orden": 22}
+        
+        ]
+      },
+      "linea4a": {
+        "estaciones": [
+          {"nombre": "Vicuña mackenna", "tiempo": 1, "orden": 1},
+          {"nombre": "Santa julia", "tiempo": 1, "orden": 2},
+          {"nombre": "La granja", "tiempo": 1, "orden": 3},
+          {"nombre": "Santa rosa", "tiempo": 1, "orden": 4},
+          {"nombre": "San ramon", "tiempo": 1, "orden": 5},
+          {"nombre": "La cisterna", "tiempo": 1, "orden": 6}
+  
+        ]
+      },
+      
+      "linea5": {
+        "estaciones": [
+          {"nombre": "Plaza maipu", "tiempo": 1, "orden": 1},
+          {"nombre": "Santiago bueras", "tiempo": 1, "orden": 2},
+          {"nombre": "Del sol", "tiempo": 1, "orden": 3},
+          {"nombre": "Monte tabor", "tiempo": 1, "orden": 4},
+          {"nombre": "Las parcelas", "tiempo": 1, "orden": 5},
+          {"nombre": "Laguna sur", "tiempo": 1, "orden": 6},
+          {"nombre": "Barrancas", "tiempo": 1, "orden": 7},
+          {"nombre": "Pudahuel", "tiempo": 1, "orden": 8},
+          {"nombre": "San pablo", "tiempo": 1, "orden": 9},
+          {"nombre": "Lo prado", "tiempo": 1, "orden": 10},
+          {"nombre": "Blanqueado", "tiempo": 1, "orden": 11},
+          {"nombre": "Gruta de lourdes", "tiempo": 1, "orden": 12},
+          {"nombre": "Quinta normal", "tiempo": 1, "orden": 13},
+          {"nombre": "Cumming", "tiempo": 1, "orden": 14},
+          {"nombre": "Santa ana", "tiempo": 1, "orden": 15},
+          {"nombre": "Plaza de armas", "tiempo": 1, "orden": 16},
+          {"nombre": "Bellas artes", "tiempo": 1, "orden": 17},
+          {"nombre": "Baquedano", "tiempo": 1, "orden": 18},
+          {"nombre": "Paque bustamante", "tiempo": 1, "orden": 19},
+          {"nombre": "Santa isabel", "tiempo": 1, "orden": 20},
+          {"nombre": "Irarrázaval", "tiempo": 1, "orden": 21},
+          {"nombre": "Ñuble", "tiempo": 1, "orden": 22},
+          {"nombre": "Rodrigo de araya", "tiempo": 1, "orden": 23},
+          {"nombre": "Carlos valdovinos", "tiempo": 1, "orden": 24},
+          {"nombre": "Camino agricola", "tiempo": 1, "orden": 25},
+          {"nombre": "San joaquin", "tiempo": 1, "orden": 26},
+          {"nombre": "Pedrero", "tiempo": 1, "orden": 27},
+          {"nombre": "Mirador", "tiempo": 1, "orden": 28},
+          {"nombre": "Bellavista la florida", "tiempo": 1, "orden": 29},
+          {"nombre": "Vicente valdes", "tiempo": 1, "orden": 30}  
+        ]
+      },
+      "linea6": {
+        "estaciones": [
+          {"nombre": "Cerrillos", "tiempo": 1, "orden": 1},
+          {"nombre": "Lo valledor", "tiempo": 1, "orden": 2},
+          {"nombre": "Pedro aguirre cerda", "tiempo": 1, "orden": 3},
+          {"nombre": "Franklin", "tiempo": 1, "orden": 4},
+          {"nombre": "Bio bio", "tiempo": 1, "orden": 5},
+          {"nombre": "Ñuble", "tiempo": 1, "orden": 6},
+          {"nombre": "Estadio nacional", "tiempo": 1, "orden": 7},
+          {"nombre": "Ñuñoa", "tiempo": 1, "orden": 8},
+          {"nombre": "Ines de suarez", "tiempo": 1, "orden": 9},
+          {"nombre": "Los leones", "tiempo": 1, "orden": 10}
+        ]
+      }
+    }
+  }
+  
