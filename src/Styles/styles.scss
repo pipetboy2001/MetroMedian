@@ -2,22 +2,43 @@
 @import 'Estaciones';
 @import 'Nav';
 
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M -74.31713974473774%2c330 C 21.68%2c318.2 213.68%2c258.8 405.68286025526226%2c271 C 597.68%2c283.2 693.68%2c416 885.6828602552623%2c391 C 1077.68%2c366 1173.68%2c129 1365.6828602552623%2c146 C 1557.68%2c163 1830.82%2c471.6 1845.6828602552623%2c476 C 1860.55%2c480.4 1521.14%2c229.6 1440%2c168' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -17.88231749635196%2c58 C 78.12%2c103.4 270.12%2c266 462.11768250364804%2c285 C 654.12%2c304 750.12%2c144.2 942.117682503648%2c153 C 1134.12%2c161.8 1230.12%2c337.2 1422.117682503648%2c329 C 1614.12%2c320.8 1898.54%2c93.2 1902.117682503648%2c112 C 1905.69%2c130.8 1532.42%2c360.8 1440%2c423' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -771.9110545953049%2c373 C -675.91%2c340.4 -483.91%2c212 -291.91105459530485%2c210 C -99.91%2c208 -3.91%2c385.2 188.08894540469515%2c363 C 380.09%2c340.8 476.09%2c99.8 668.0889454046951%2c99 C 860.09%2c98.2 993.71%2c337.8 1148.088945404695%2c359 C 1302.47%2c380.2 1381.62%2c235.8 1440%2c205' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -378.12726496320647%2c203 C -282.13%2c260.2 -90.13%2c491 101.87273503679353%2c489 C 293.87%2c487 389.87%2c205 581.8727350367935%2c193 C 773.87%2c181 869.87%2c433.2 1061.8727350367935%2c429 C 1253.87%2c424.8 1466.25%2c174.6 1541.8727350367935%2c172 C 1617.5%2c169.4 1460.37%2c367.2 1440%2c416' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-color: #0e2a47;
+}
+
 .app-container {
-    display: flex;
     height: 100vh;
+    display: flex;
   }
   
   .map-container {
-    flex: 0.50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #0e2a47;
+    border-radius: 2%;
+    overflow: hidden; /* Para asegurar que la imagen no sobresalga del contenedor */
+  
+    .map-image {
+      border-radius: 2%;
+      width: 100%;
+      height: 100%; /* Asegura que la imagen se ajuste tanto horizontal como verticalmente */
+      object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    }
   }
+  
   
   .column-container {
-    flex: 0.57;
+    flex: 1;
+    background-color: white;
+    border-radius: 2%;
     display: flex;
     flex-direction: column;
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+    align-items: center;
+    justify-content: center;
   }
-  
-  .map-image {
-    width: 100%; /* Para asegurar que la imagen del mapa se ajuste correctamente */
-  }
+
   

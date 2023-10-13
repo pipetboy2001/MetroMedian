@@ -104,7 +104,7 @@ const MetroFinder = () => {
             <li key={index}>{estacion}</li>
           ))}
         </ul>
-        {puntosMedios.length > 0 && <p>Puntos medios: {puntosMedios.join(", ")}</p>}
+        {puntosMedios.length > 0 && <p>Puntos medios: {puntosMedios.join(" y ")}</p>}
       </div>
     </div>
   );

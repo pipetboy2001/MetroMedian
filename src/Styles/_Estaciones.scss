@@ -35,25 +35,8 @@ select {
     background-color: #45a049;
   }
   
-  p {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
 
 .resultados-container {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
@@ -65,9 +48,7 @@ select {
   }
   
   .resultados-container ul {
-    list-style-type: none;
     padding: 0;
-    display: flex;
   }
   
   .resultados-container li {
