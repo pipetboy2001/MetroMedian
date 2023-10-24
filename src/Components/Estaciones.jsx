@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { lineas_metro } from "../Data/Estaciones.json";
+import { FaTrain } from "react-icons/fa";
 
 const estacionesMetro = lineas_metro.flat();
 const MetroFinder = () => {
@@ -61,50 +62,73 @@ const MetroFinder = () => {
       }
     }
   };
-  
 
   return (
     <div className="container">
-      <select value={estacion1} onChange={(e) => setEstacion1(e.target.value)}>
-        <option value="" disabled>
-          Selecciona una estación de origen
-        </option>
-        {estacionesMetro.map((estacion, index) => (
-          <option
-            key={index}
-            value={estacion}
-            disabled={estacion.startsWith("Linea")}
-            className={estacion.startsWith("Linea") ? "linea-option" : ""}
-          >
-            {estacion}
+      <div className="selectors-wrapper">
+        <select
+          value={estacion1}
+          onChange={(e) => setEstacion1(e.target.value)}
+          className="station-selector"
+        >
+          <option value="" disabled>
+            Selecciona una estación de origen
           </option>
-        ))}
-      </select>
-      <select value={estacion2} onChange={(e) => setEstacion2(e.target.value)}>
-        <option value="" disabled>
-          Selecciona una estación de destino
-        </option>
-        {estacionesMetro.map((estacion, index) => (
-          <option
-            key={index}
-            value={estacion}
-            disabled={estacion.startsWith("Linea")}
-            className={estacion.startsWith("Linea") ? "linea-option" : ""}
-          >
-            {estacion}
+          {estacionesMetro.map((estacion, index) => (
+            <option
+              key={index}
+              value={estacion}
+              disabled={estacion.startsWith("Linea")}
+              className={estacion.startsWith("Linea") ? "linea-option" : ""}
+            >
+              {estacion}
+            </option>
+          ))}
+        </select>
+        <select
+          value={estacion2}
+          onChange={(e) => setEstacion2(e.target.value)}
+          className="station-selector"
+        >
+          <option value="" disabled>
+            Selecciona una estación de destino
           </option>
-        ))}
-      </select>
-
-      <button onClick={encontrarRuta}>Encontrar camino</button>
-      <div className="resultados-container">
-        <p>Costo: {costo}</p>
+          {estacionesMetro.map((estacion, index) => (
+            <option
+              key={index}
+              value={estacion}
+              disabled={estacion.startsWith("Linea")}
+              className={estacion.startsWith("Linea") ? "linea-option" : ""}
+            >
+              {estacion}
+            </option>
+          ))}
+        </select>
+      </div>
+      <button onClick={encontrarRuta} className="search-button">
+        Encontrar camino
+      </button>
+      <div className="results-container">
         <ul>
           {ruta.map((estacion, index) => (
-            <li key={index}>{estacion}</li>
+            <li key={index}>
+              <FaTrain className="train-icon" />{estacion}</li>
           ))}
         </ul>
-        {puntosMedios.length > 0 && <p>Puntos medios: {puntosMedios.join(" y ")}</p>}
+      </div>
+
+      <div className="results-text">
+        <p>
+          Costo: <span className="costo-value"> {costo} </span>
+        </p>
+        {puntosMedios.length > 0 && (
+          <p>
+            Puntos medios:{" "}
+            <span className="puntos-medios-list">
+              {puntosMedios.join(", ")}
+            </span>
+          </p>
+        )}
       </div>
     </div>
   );

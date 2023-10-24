@@ -6,7 +6,7 @@ import Logo from "../assets/Logo.svg";
 function NavBar() {
   return (
     <>
-      <Navbar className="bg-body-tertiary justify-content-between">
+      <Navbar className="bg-body-tertiary justify-content-center">
         <Container>
           <Navbar.Brand className="d-flex align-items-center">
             <span className="titulo-navbar mr-2">METRO </span>
