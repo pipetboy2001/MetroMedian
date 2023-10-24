@@ -51,7 +51,7 @@ const MetroFinder = () => {
         setRuta([]);
         setPuntosMedios([]);
       } else {
-        setCosto(rutaOptima.length - 1);
+        setCosto(rutaOptima.length );
         setRuta(rutaOptima);
         const puntoMedioIndex = Math.floor(rutaOptima.length / 2);
         const puntosMedios =
@@ -124,7 +124,8 @@ const MetroFinder = () => {
 
       <div className="results-text">
         <p>
-          Costo: <span className="costo-value"> {costo} </span>
+        N° de Estaciones: <span className="costo-value"> {costo !== 0 ? costo : 'No se ha seleccionado'} </span>
+
         </p>
         {puntosMedios.length > 0 && (
           <p>
