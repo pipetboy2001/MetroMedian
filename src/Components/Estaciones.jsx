@@ -109,12 +109,17 @@ const MetroFinder = () => {
         Encontrar camino
       </button>
       <div className="results-container">
-        <ul>
-          {ruta.map((estacion, index) => (
-            <li key={index}>
-              <FaTrain className="train-icon" />{estacion}</li>
-          ))}
-        </ul>
+        {ruta.length > 0 ? (
+          <ul>
+            {ruta.map((estacion, index) => (
+              <li key={index}>
+                <FaTrain className="train-icon" /> {estacion}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>Seleccione 2 estaciones para encontrar la ruta.</p>
+        )}
       </div>
 
       <div className="results-text">
