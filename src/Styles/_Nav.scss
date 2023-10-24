@@ -8,7 +8,7 @@
 // Estilos Bootstrap (React Bootstrap)
 .navbar {
   background-color: #e8dddd;
-  height: 80px; // Altura del navbar
+  height: 12vh; // Altura del navbar
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,5 +16,6 @@
 
 // Estilos para el logo si es necesario
 .navbar img {
-  margin-right: 10px; // Espacio entre el logo y el texto
+  margin-right: 1px;
+  margin-left: 1px;
 }
