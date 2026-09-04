@@ -25,7 +25,7 @@ class MinHeap {
       this.items[0] = last;
       let i = 0;
       const n = this.items.length;
-      while (true) {
+      for (;;) {
         let smallest = i;
         const l = 2 * i + 1;
         const r = 2 * i + 2;
