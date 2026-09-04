@@ -1,13 +1,13 @@
-import React from "react";
 import Estaciones from "./Components/Estaciones";
 import NavBar from "./Components/Navbar";
-import "./Styles/styles.scss";
 
 const App = () => {
   return (
-    <div className="contenedor-blanco">
-          <NavBar />
-          <Estaciones />
+    <div className="flex h-screen flex-col overflow-hidden bg-background text-foreground">
+      <NavBar />
+      <main className="flex-1 overflow-hidden">
+        <Estaciones />
+      </main>
     </div>
   );
 };
