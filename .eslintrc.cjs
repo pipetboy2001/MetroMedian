@@ -16,5 +16,8 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // No PropTypes/TS in this project; the shadcn-style ui/ primitives forward
+    // arbitrary props by design.
+    'react/prop-types': 'off',
   },
 }

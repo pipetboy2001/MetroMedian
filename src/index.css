@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Catppuccin Mocha */
+:root {
+  --background: 240 21% 15%; /* base */
+  --foreground: 226 64% 88%; /* text */
+  --card: 237 16% 23%; /* surface0 */
+  --card-foreground: 226 64% 88%; /* text */
+  --popover: 237 16% 23%; /* surface0 */
+  --popover-foreground: 226 64% 88%; /* text */
+  --primary: 170 57% 73%; /* teal */
+  --primary-foreground: 240 21% 15%; /* base */
+  --secondary: 234 13% 31%; /* surface1 */
+  --secondary-foreground: 226 64% 88%; /* text */
+  --muted: 237 16% 23%; /* surface0 */
+  --muted-foreground: 228 24% 72%; /* subtext0 */
+  --accent: 234 13% 31%; /* surface1 */
+  --accent-foreground: 226 64% 88%; /* text */
+  --destructive: 350 65% 77%; /* maroon */
+  --destructive-foreground: 240 21% 15%; /* base */
+  --border: 234 13% 31%; /* surface1 */
+  --input: 234 13% 31%; /* surface1 */
+  --ring: 170 57% 73%; /* teal */
+  --radius: 0.75rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  background-image:
+    linear-gradient(hsl(var(--border) / 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border) / 0.35) 1px, transparent 1px);
+  background-size: 34px 34px;
+  background-position: center;
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.35);
+}
+
+.metro-map-viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: radial-gradient(circle at 30% 20%, hsl(237 16% 23%), hsl(240 21% 12%) 70%);
+  touch-action: none;
+  cursor: grab;
+}
+
+.metro-map-viewport:active {
+  cursor: grabbing;
+}
+
+.metro-map-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.05s linear;
+}
+
+.metro-station {
+  cursor: pointer;
+}
+
+.metro-station text {
+  pointer-events: none;
+  user-select: none;
+}
+
+.metro-map-controls {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.metro-map-controls button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--card) / 0.9);
+  color: hsl(var(--foreground));
+  font-size: 1rem;
+  line-height: 1;
+  backdrop-filter: blur(4px);
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.metro-map-controls button:hover {
+  background: hsl(var(--secondary));
+  transform: translateY(-1px);
+}
+
+.metro-map-controls button.reset {
+  font-size: 0.85rem;
+}
